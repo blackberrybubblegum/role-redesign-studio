@@ -1,0 +1,3 @@
+@import "tailwindcss" source(none);
+@plugin "@aegov/design-system";
+@source inline("aegov-btn btn-sm btn-outline btn-soft btn-link btn-secondary btn-icon aegov-tab tab-pills tab-sm tab-items tab-link tab-active aegov-form-control form-control-input control-prefix control-suffix aegov-alert alert-warning alert-sm alert-content alert-title alert-icon aegov-badge");

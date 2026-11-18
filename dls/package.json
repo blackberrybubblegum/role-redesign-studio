@@ -1,0 +1,10 @@
+{
+  "name": "role-redesign-studio-styles",
+  "private": true,
+  "description": "Compiles the UAE Design System v3.0.7 component styles used by the Role Redesign Studio.",
+  "dependencies": {
+    "@aegov/design-system": "3.0.7",
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}

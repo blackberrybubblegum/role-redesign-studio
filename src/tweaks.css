@@ -1,0 +1,31 @@
+/* Small, documented overrides on top of the UAE Design System components. */
+.aegov-btn > svg[fill="none"], .control-prefix > svg[fill="none"], .alert-icon > svg[fill="none"] { fill: none; }
+.aegov-btn { flex-wrap: nowrap; white-space: nowrap; }
+.topbar .aegov-btn { font-size: 14px; }
+.tabs .tab-items { gap: 4px; margin-bottom: 0; }
+.tabs .tab-link { padding: 6px 14px; white-space: nowrap; }
+.sidebar .form-control-input input, .sidebar .form-control-input select { padding-block: 8px; }
+.guard-note { gap: 10px; padding: 12px 14px; }
+.guard-note .alert-title { margin-bottom: 2px; }
+.guard-note > .alert-content { align-self: start; }
+:root.dark .aegov-alert.alert-warning { --alert-bg: var(--color-camel-950); --alert-fg: var(--color-camel-200); }
+:root[dir="rtl"] input[type="range"] {
+  background-position: right center;
+  background-image: linear-gradient(to left, var(--range-progress-from), var(--range-progress-to));
+}
+.control input[type="range"] { margin-block: 10px 4px; }
+@media (max-width: 560px) {
+  .tabs .tab-link { flex: 1; justify-content: center; padding: 6px 8px; font-size: 13px; }
+}
+.aegov-form-control select { appearance: none; background-position: right 0.75rem center; background-size: 1.25em; }
+:root[dir="rtl"] .aegov-form-control select { background-position: left 0.75rem center; }
+@media (max-width: 1000px) { .badge.aegov-badge { display: none; } }
+@media (max-width: 560px) {
+  .topbar .tools { gap: 6px; }
+  .topbar .aegov-btn { height: 36px; }
+  .topbar .tool-btn:has(svg) { width: 36px; padding-inline: 0; }
+  .topbar .lang-btn { padding-inline: 10px; }
+}
+.side-toggle { flex: none; }
+.side-toggle > svg { width: 22px; height: 22px; transition: transform 280ms cubic-bezier(0.2, 0, 0, 1); }
+.tabs .tab-items { overflow-x: auto; scrollbar-width: none; }

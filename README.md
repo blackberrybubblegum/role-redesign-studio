@@ -58,6 +58,13 @@ Merge your pull request into `main`, and the view link updates on its own.
 
 Aamilah keeps a copy hosted in Claude for the live analysis feature, and she updates it separately.
 
-## Working with an AI assistant
+## Updating it with Claude
 
-Give the assistant this folder and this README, and ask for one change at a time. Ask it to keep both languages in sync, run `python3 build.py`, and check light and dark mode before you send anything back.
+1. Accept the repo invite on GitHub, then connect GitHub to your Claude account under Settings → Connectors.
+2. Start a new chat and describe one change, for example:
+
+   > Work on the GitHub repo blackberrybubblegum/role-redesign-studio and read the README first. Add a sixth task to the field inspector role. Keep English and Arabic in sync, run `python3 build.py`, check light and dark mode, then push to a new branch and open a pull request.
+
+3. Review the pull request on GitHub and merge it. The view link updates a minute or two later.
+
+Ask for one change per chat, so each pull request stays small and easy to check.

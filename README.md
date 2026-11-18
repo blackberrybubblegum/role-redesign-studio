@@ -2,13 +2,15 @@
 
 Concept prototype for Team 6 in the NYUAD × KPMG Case Competition (finals 20 November 2026). It shows how a fictional UAE government entity, the Department of Business Services, can use AI to redesign roles without leaving people behind.
 
-Live version: https://claude.ai/artifact/67fHmog52fxnRuBnDie23W
-
 ## See it
 
-Open `dist/index.html` in a browser. That file is the whole app.
+View it at https://blackberrybubblegum.github.io/role-redesign-studio/
 
-Two features work only when the page runs inside Claude: "Analyse a role" (live AI analysis) and "Download report". Everything else works anywhere.
+The page rebuilds a minute or two after every merge into `main`. To check on a build, open the repo's Actions tab.
+
+You can also open `dist/index.html` on your own computer after running `python3 build.py`.
+
+Two features work only when the page runs inside Claude: "Analyse a role" (live AI analysis) and "Download report". Everything else works on the link above.
 
 ## Change it
 
@@ -50,18 +52,11 @@ Then open `dist/index.html` again. Run `python3 build.py` after every edit.
 - Natural attrition 6% a year. Cost per employee AED 300,000 a year. AI cost AED 6 million a year. Training AED 2,000 per person-week.
 - Training waves: 11 January 2027 (customer services, licensing), 5 April 2027 (inspection, legal, corporate), 6 September 2027 (technology, communications, leadership).
 
-## Preview link
-
-Every merge into `main` rebuilds the page and publishes it to GitHub Pages:
-https://blackberrybubblegum.github.io/role-redesign-studio/
-
-Allow a minute or two after merging. You can follow the build under the repo's Actions tab.
-
 ## Publishing changes
 
-The live link is a Claude artifact owned by Aamilah. Send her your changed `src` files or the new `dist/index.html`, and she republishes it.
+Merge your pull request into `main`, and the view link updates on its own.
 
-You can also host `dist/index.html` anywhere, such as GitHub Pages or Netlify. Live analysis then needs `window.RRS_CONFIG = { apiUrl: "..." }` pointing at a small backend that holds the API key.
+Aamilah keeps a copy hosted in Claude for the live analysis feature, and she updates it separately.
 
 ## Working with an AI assistant
 

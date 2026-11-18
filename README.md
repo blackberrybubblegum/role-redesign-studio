@@ -50,6 +50,13 @@ Then open `dist/index.html` again. Run `python3 build.py` after every edit.
 - Natural attrition 6% a year. Cost per employee AED 300,000 a year. AI cost AED 6 million a year. Training AED 2,000 per person-week.
 - Training waves: 11 January 2027 (customer services, licensing), 5 April 2027 (inspection, legal, corporate), 6 September 2027 (technology, communications, leadership).
 
+## Preview link
+
+Every merge into `main` rebuilds the page and publishes it to GitHub Pages:
+https://blackberrybubblegum.github.io/role-redesign-studio/
+
+Allow a minute or two after merging. You can follow the build under the repo's Actions tab.
+
 ## Publishing changes
 
 The live link is a Claude artifact owned by Aamilah. Send her your changed `src` files or the new `dist/index.html`, and she republishes it.
